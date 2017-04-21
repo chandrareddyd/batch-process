@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS tbl_irinput;
+CREATE TABLE IF NOT EXISTS tbl_irinput (
+  nric varchar(100),
+  case_id varchar(30),
+  tax_type number(10),
+  name varchar(30),
+  amount_due number(10,2),
+  appointment_date datetime,
+  release_date datetime,
+  spaces varchar(30)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
